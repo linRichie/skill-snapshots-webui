@@ -29,16 +29,16 @@ English | [简体中文](./README.md)
 ## 📸 Screenshots
 
 ### Skill List
-![Skill List](docs/images/skill-list.png)
+![Skill List](https://github.com/linRichie/skill-snapshots-webui/raw/main/public/List%20of%20skills.png)
 
 ### Skill Detail
-![Skill Detail](docs/images/skill-detail.png)
+![Skill Detail](https://github.com/linRichie/skill-snapshots-webui/raw/main/public/Skill%20Details.png)
 
 ### Version History
-![Version History](docs/images/version-history.png)
+![Version History](https://github.com/linRichie/skill-snapshots-webui/raw/main/public/Version%20History.png)
 
 ### Admin Panel
-![Admin Panel](docs/images/admin-panel.png)
+![Admin Panel](https://github.com/linRichie/skill-snapshots-webui/raw/main/public/Admin%20Backend.png)
 
 ## 🚀 Quick Start
 
@@ -52,7 +52,7 @@ English | [简体中文](./README.md)
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/skill-snapshots-webui.git
+git clone https://github.com/linRichie/skill-snapshots-webui.git
 cd skill-snapshots-webui
 
 # Install frontend dependencies

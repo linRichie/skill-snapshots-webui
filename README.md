@@ -30,19 +30,19 @@
 
 ### 技能列表
 
-![技能列表](docs/images/skill-list.png)
+![技能列表](https://github.com/linRichie/skill-snapshots-webui/raw/main/public/List%20of%20skills.png)
 
 ### 技能详情
 
-![技能详情](docs/images/skill-detail.png)
+![技能详情](https://github.com/linRichie/skill-snapshots-webui/raw/main/public/Skill%20Details.png)
 
 ### 版本历史
 
-![版本历史](docs/images/version-history.png)
+![版本历史](https://github.com/linRichie/skill-snapshots-webui/raw/main/public/Version%20History.png)
 
 ### 管理后台
 
-![管理后台](docs/images/admin-panel.png)
+![管理后台](https://github.com/linRichie/skill-snapshots-webui/raw/main/public/Admin%20Backend.png)
 
 ## 🚀 快速开始
 
@@ -56,7 +56,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/skill-snapshots-webui.git
+git clone https://github.com/linRichie/skill-snapshots-webui.git
 cd skill-snapshots-webui
 
 # 安装前端依赖
