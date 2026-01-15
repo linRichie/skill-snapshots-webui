@@ -1,0 +1,51 @@
+# Docker Compose configuration for Skill Snapshots WebUI
+# Use this for local development or production deployment
+
+version: '3.8'
+
+services:
+  # WebUI service (frontend + backend)
+  webui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: skill-snapshots-webui
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - GIN_MODE=release
+    volumes:
+      # Mount your skills directory for live updates
+      - ./skills:/workspace:ro
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    networks:
+      - skill-snapshots-network
+
+  # Nginx reverse proxy (optional, for production)
+  nginx:
+    image: nginx:alpine
+    container_name: skill-snapshots-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - webui
+    networks:
+      - skill-snapshots-network
+    profiles:
+      - production
+
+networks:
+  skill-snapshots-network:
+    driver: bridge

@@ -1,0 +1,48 @@
+{
+  "name": "skill-snapshots-webui",
+  "version": "1.0.0",
+  "description": "A visual management platform for Claude Code skill snapshots - browse, manage, and version control your AI skills",
+  "type": "module",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/skill-snapshots-webui.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.5",
+    "pinia": "^2.1.7",
+    "axios": "^1.6.0",
+    "marked": "^11.0.0",
+    "dompurify": "^3.0.6",
+    "dayjs": "^1.11.10"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@tailwindcss/typography": "^0.5.10",
+    "typescript": "^5.3.0",
+    "vue-tsc": "^1.8.27",
+    "vite": "^5.0.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "@types/dompurify": "^3.0.5"
+  },
+  "keywords": [
+    "claude-code",
+    "skill-management",
+    "version-control",
+    "ai-tools",
+    "webui",
+    "vue3",
+    "typescript"
+  ]
+}
